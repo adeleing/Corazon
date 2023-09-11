@@ -11,15 +11,16 @@ body{
     justify-content: center;
 }
 
-.heart{
-    font-size: 10rem;
-    color: red;
-    animation: heart .6s infinite alternate linear;
-}
 #corazon{
     display: flex;
     justify-content: center;
     flex-direction: row;
+}
+
+.heart{
+    font-size: 10rem;
+    color: red;
+    animation: heart .6s infinite alternate linear;
 }
 .heart1{
     font-size: 15rem;
@@ -38,5 +39,40 @@ body{
     }
     to{
         transform: scale(1);
+    }
+}
+@media screen and (max-width: 500px) {
+    body{
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+    }
+
+    h1{
+        color: aliceblue;
+    }
+
+    #corazon{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .heart{
+        font-size: 8rem;
+        color: red;
+        animation: heart .6s infinite alternate linear;
+    }
+    .heart1{
+        font-size: 10rem;
+        color: red;
+        animation: heart .5s infinite alternate linear;
+    }
+    .heart2{
+        font-size: 8rem;
+        color: red;
+        animation: heart .6s infinite alternate linear;
     }
 }
