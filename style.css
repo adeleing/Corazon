@@ -1,0 +1,27 @@
+body{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.love{
+    display: flex;
+
+}
+
+.heart{
+    font-size: 15rem;
+    color: red;
+    animation: heart .5s infinite alternate linear;
+}
+
+@keyframes heart{
+    from{
+        transform: scale(.7);
+    }
+    to{
+        transform: scale(1);
+    }
+}
